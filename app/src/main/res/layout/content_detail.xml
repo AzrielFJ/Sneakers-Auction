@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bt_lelang"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <FrameLayout
+                        android:id="@+id/frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/viewPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="400dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/jordan"
+                                />
+
+
+
+                            <androidx.appcompat.widget.Toolbar
+                                android:id="@+id/toolbar"
+                                android:background="#00FFFFFF"
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                app:elevation="0dp"
+                                android:layout_height="?attr/actionBarSize"
+                                app:layout_scrollFlags="scroll|enterAlways"
+                                />
+                        </RelativeLayout>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/SliderDots"
+                            android:layout_below="@id/viewPager"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="280dp"
+                            app:cardCornerRadius="30dp"
+                            android:id="@+id/cv"
+
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                >
+                                <TextView
+                                    android:id="@+id/tv_namaBarang_detail"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Nama Barang"
+                                    android:textSize="24dp"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:fontFamily="@font/sego"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"></TextView>
+                                <TextView
+                                    android:layout_marginTop="20dp"
+                                    android:id="@+id/tv_harga_detail"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="22dp"
+                                    android:text="Harga"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_below="@id/tv_namaBarang_detail"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_height="wrap_content"></TextView>
+                                <View
+                                    android:id="@+id/view3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:visibility="visible"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_below="@id/tv_harga_detail"
+                                    android:background="@color/colorView" />
+                                <TextView
+                                    android:id="@+id/tv_deskripsi_detail2"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_width="match_parent"
+                                    android:textSize="20dp"
+                                    android:layout_below="@id/tv_harga_detail"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:justificationMode="inter_word"
+                                    android:text="PRODUCT DETAILS"
+                                    android:textAllCaps="true"
+                                    android:textStyle="bold"
+                                    android:textColor="#797979"
+                                    android:layout_height="wrap_content"></TextView>
+                                <TextView
+                                    android:id="@+id/tv_deskripsi_detail"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="match_parent"
+                                    android:textSize="20dp"
+                                    android:layout_below="@id/tv_deskripsi_detail2"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:justificationMode="inter_word"
+                                    android:text="Description"
+                                    android:textColor="#5B5B5B"
+                                    android:layout_height="wrap_content"></TextView>
+                                <View
+                                    android:id="@+id/view2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_below="@id/tv_deskripsi_detail"
+                                    android:background="@color/colorView" />
+                                <TextView
+                                    android:id="@+id/tv_list"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/view2"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_marginTop="20dp"
+                                    android:textSize="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="Auction Winner"
+                                    ></TextView>
+                                <TextView
+                                    android:id="@+id/tv_win"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"
+                                    android:fontFamily="@font/sego"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="18dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_below="@id/tv_id"
+                                    android:text="Auction Winner "/>
+                                <TextView
+                                    android:id="@+id/batas_win"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text=": "
+                                    android:layout_toRightOf="@id/tv_win"
+                                    android:layout_below="@id/tv_id"
+                                    android:textColor="@color/colorPrimary"
+
+                                    ></TextView>
+                                <TextView
+                                    android:id="@+id/tv_win2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"
+                                    android:fontFamily="@font/sego"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="18dp"
+                                    android:layout_below="@id/tv_id"
+                                    android:layout_toRightOf="@id/batas_win"
+
+                                    android:text="Azriel"/>
+                                <TextView
+                                    android:id="@+id/tv_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"
+                                    android:fontFamily="@font/sego"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="18dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_below="@id/tv_list"
+                                    android:text="Id User "/>
+                                <TextView
+                                    android:id="@+id/batas_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text=": "
+                                    android:layout_toRightOf="@id/tv_win"
+                                    android:layout_below="@id/tv_list"
+                                    android:textColor="@color/colorPrimary"
+
+                                    ></TextView>
+                                <TextView
+                                    android:id="@+id/tv_id2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPrimary"
+                                    android:fontFamily="@font/sego"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="18dp"
+                                    android:layout_below="@id/tv_list"
+
+                                    android:layout_toRightOf="@id/batas_win"
+                                    android:text="1"/>
+                                <View
+                                    android:id="@+id/view4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_below="@id/tv_win"
+                                    android:background="@color/colorView" />
+                                <!--                    <View-->
+                                <!--                        android:layout_width="match_parent"-->
+                                <!--                        android:layout_height="2dp"-->
+
+                                <!--                        android:layout_below="@id/frame"-->
+                                <!--                        android:background="@color/colorPrimary" />-->
+
+                        ]
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/bt_lelang"
+        android:layout_width="match_parent"
+        android:text="Open Auction"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>

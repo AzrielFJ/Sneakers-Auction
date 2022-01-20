@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:elevation="0dp"
+        android:minHeight="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Auction"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/sego"
+                ></TextView>
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_logout"
+                android:layout_alignParentRight="true"
+                ></ImageButton>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:elevation="0dp"
+        android:layout_below="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <nl.joery.animatedbottombar.AnimatedBottomBar
+            android:id="@+id/nav_view_lelang"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:abb_badgeBackgroundColor="@color/colorPrimary"
+            app:abb_selectedTabType="text"
+            android:elevation="8dp"
+            app:abb_indicatorAppearance="round"
+            app:abb_indicatorMargin="16dp"
+            app:abb_indicatorHeight="4dp"
+            app:abb_badgeAnimation="scale"
+            app:abb_tabColor="@color/white"
+            app:abb_tabColorSelected="@color/white"
+            app:abb_rippleEnabled="true"
+
+            app:abb_tabs="@menu/bottom_nav_menu_lelang"
+            android:layout_alignParentBottom="true"
+            app:abb_selectedIndex="0" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment
+        android:id="@+id/nav_host_fragment_lelang"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        app:navGraph="@navigation/mobile_navigation_lelang_mas" />
+
+</RelativeLayout>

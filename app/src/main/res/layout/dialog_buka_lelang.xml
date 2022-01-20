@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ly_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of items"
+            android:layout_marginTop="10dp"
+            app:hintAnimationEnabled="true"
+            style="@style/RegisterPetugasTextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/et_nama_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:editable="false"
+                android:fontFamily="@font/sego" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            ></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ly_tanggal_dibuka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Date"
+                android:layout_marginTop="10dp"
+                app:hintAnimationEnabled="true"
+                style="@style/RegisterPetugasTextInputLayoutStyle">
+
+                <EditText
+                    android:id="@+id/et_tanggal_dibuka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:fontFamily="@font/sego" />
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ly_jam1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Time"
+                    android:layout_marginTop="10dp"
+                    app:hintAnimationEnabled="true"
+                    style="@style/RegisterPetugasTextInputLayoutStyle">
+
+                    <EditText
+                        android:id="@+id/et_jam_dibuka"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:fontFamily="@font/sego" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            ></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ly_tanggal_ditutup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Date"
+                    android:layout_marginTop="10dp"
+                    app:hintAnimationEnabled="true"
+                    style="@style/RegisterPetugasTextInputLayoutStyle">
+
+                    <EditText
+                        android:id="@+id/et_tanggal_ditutup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:fontFamily="@font/sego" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ly_jam2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Time"
+                    android:layout_marginTop="10dp"
+                    app:hintAnimationEnabled="true"
+                    style="@style/RegisterPetugasTextInputLayoutStyle">
+
+                    <EditText
+                        android:id="@+id/et_jam_ditutup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/sego" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ly_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Initial Price"
+            android:layout_marginTop="15dp"
+            app:hintAnimationEnabled="true"
+            style="@style/RegisterPetugasTextInputLayoutStyle">
+
+            <EditText
+                android:id="@+id/et_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sego"
+                android:inputType="number"
+                android:drawableStart="@drawable/ic_rp"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:focusable="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout>

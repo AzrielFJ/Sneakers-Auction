@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/mycountdown"
+        style="@style/CustomFont"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="8dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixDay="day"
+        app:suffixGravity="bottom"
+        app:suffixHour="hour"
+        app:suffixMinute="minute"
+        app:suffixSecond="second"
+        app:suffixTextColor="@color/colorAccent"
+        app:suffixTextSize="12sp"
+        app:timeBgColor="@color/colorPrimary"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="20dp" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mycountdown"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iv_gambar"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jordan"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/iv_gambar"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_nama_barang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:textSize="14sp"
+                    android:text="Items">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text=": "
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/tv_win"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_nama_barang2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@id/batas"
+                    android:text="Nama Barang">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:layout_below="@id/tv_nama_barang2"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:singleLine="true"
+                    android:text="Initial Price"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:text=": "
+                    android:layout_below="@id/tv_nama_barang"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/tv_win"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_harga2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:layout_below="@id/tv_nama_barang2"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@id/batas"
+                    android:text="Initial Price"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_bid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="marquee"
+                    android:maxLines="4"
+                    android:fontFamily="@font/sego"
+                    android:layout_below="@id/tv_harga"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Highest Offer      "
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:text=": "
+                    android:layout_toRightOf="@id/tv_win"
+                    android:layout_below="@id/tv_harga"
+                    android:textColor="@color/colorPrimary"
+
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_bid2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="marquee"
+                    android:maxLines="4"
+                    android:fontFamily="@font/sego"
+                    android:layout_below="@id/tv_harga"
+                    android:layout_toRightOf="@id/batas"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Highest Offer"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_officer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:layout_below="@id/tv_bid"
+                    android:text="Officer Name"/>
+                <TextView
+                    android:id="@+id/batas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:text=": "
+                    android:layout_below="@id/tv_bid"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/tv_bid"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_officer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+
+                    android:layout_toRightOf="@id/batas"
+                    android:layout_below="@id/tv_bid"
+                    android:text="Officer Name"/>
+                <TextView
+                    android:id="@+id/tv_win"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:layout_below="@id/tv_officer2"
+                    android:text="Auction Winner "/>
+                <TextView
+                    android:id="@+id/batas_win"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:text=": "
+                    android:visibility="gone"
+                    android:layout_below="@id/tv_officer2"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/tv_bid"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_win2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:layout_below="@id/tv_officer2"
+                    android:layout_toRightOf="@id/batas"
+                    android:visibility="gone"
+                    android:text="Officer Name"/>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

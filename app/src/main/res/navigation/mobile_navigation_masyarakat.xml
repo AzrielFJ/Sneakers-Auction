@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_petugas"
+    app:startDestination="@+id/navigation_profile2">
+
+    <fragment
+        android:id="@+id/navigation_home_public"
+        android:name="com.example.sneakersauction.Masyarakat.Fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_list_lelang" />
+    <fragment
+        android:id="@+id/navigation_profile2"
+        android:name="com.example.sneakersauction.Masyarakat.Fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_masyarakat" />
+
+</navigation>

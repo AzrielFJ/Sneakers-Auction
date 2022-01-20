@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/iv_gambar"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="Cause you were cool and I'm a fool"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimary"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tv_no"
+                    android:text="Name">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text=": "
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/tv_harga"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/batas"
+                    android:text="Nama Barang">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/tv_no"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:singleLine="true"
+                    android:text="Initial Price "
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/batas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:text=": "
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/tv_harga"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/tv_harga2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="2"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/sego"
+                    android:singleLine="true"
+                    android:layout_toRightOf="@id/batas"
+                    android:text="Initial Price"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
